@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'api',
+    'spotify',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +91,16 @@ CORS_ORIGIN_WHITELIST = (
 
 CORS_ALLOW_CREDENTIALS = True
 
-SESSION_COOKIE_DOMAIN = 'http://localhost:3000/create-room'
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+SESSION_COOKIE_DOMAIN = 'localhost'
 
 
 # Password validation
